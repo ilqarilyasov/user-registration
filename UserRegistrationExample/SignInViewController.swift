@@ -14,17 +14,6 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func signInButtonTapped(_ sender: Any) {
         print("Sign in button tapped")
         
@@ -33,8 +22,7 @@ class SignInViewController: UIViewController {
         let userPassword = userPasswordTextField.text
         
         // Check if required fields are not empty
-        if (userName?.isEmpty)! || (userPassword?.isEmpty)!
-        {
+        if (userName?.isEmpty)! || (userPassword?.isEmpty)! {
             // Display alert message here
             print("User name \(String(describing: userName)) or password \(String(describing: userPassword)) is empty")
             displayMessage(userMessage: "One of the required fields is missing")
@@ -54,7 +42,6 @@ class SignInViewController: UIViewController {
         
         // Start Activity Indicator
         myActivityIndicator.startAnimating()
-        
         view.addSubview(myActivityIndicator)
         
         
@@ -80,8 +67,7 @@ class SignInViewController: UIViewController {
             
             self.removeActivityIndicator(activityIndicator: myActivityIndicator)
             
-            if error != nil
-            {
+            if error != nil {
                 self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
                 print("error=\(String(describing: error))")
                 return
@@ -93,8 +79,7 @@ class SignInViewController: UIViewController {
                 
                 if let parseJSON = json {
                     
-                    if parseJSON["errorMessageKey"] != nil
-                    {
+                    if parseJSON["errorMessageKey"] != nil {
                          self.displayMessage(userMessage: parseJSON["errorMessage"] as! String)
                         return
                     }
@@ -109,15 +94,13 @@ class SignInViewController: UIViewController {
                     print("The access token save result: \(saveAccesssToken)")
                     print("The userId save result \(saveUserId)")
                     
-                    if (accessToken?.isEmpty)!
-                    {
+                    if (accessToken?.isEmpty)! {
                         // Display an Alert dialog with a friendly error message
                         self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
                         return
                     }
                     
-                    DispatchQueue.main.async
-                    {
+                    DispatchQueue.main.async {
                             let homePage = self.storyboard?.instantiateViewController(withIdentifier: "HomePageViewController") as! HomePageViewController
                             let appDelegate = UIApplication.shared.delegate
                             appDelegate?.window??.rootViewController = homePage
@@ -137,15 +120,8 @@ class SignInViewController: UIViewController {
                 self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
                 print(error)
             }
-            
-            
-            
-            
          }
         task.resume()
-        
-        
-        
     }
     
     @IBAction func registerNewAccountButtonTapped(_ sender: Any) {
@@ -154,19 +130,16 @@ class SignInViewController: UIViewController {
         let registerViewController = self.storyboard?.instantiateViewController(withIdentifier: "RegisterUserViewController") as! RegisterUserViewController
         
         self.present(registerViewController, animated: true)
- 
     }
     
     func displayMessage(userMessage:String) -> Void {
-        DispatchQueue.main.async
-            {
+        DispatchQueue.main.async {
                 let alertController = UIAlertController(title: "Alert", message: userMessage, preferredStyle: .alert)
                 
                 let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
                     // Code in this block will trigger when OK button tapped.
                     print("Ok button tapped")
-                    DispatchQueue.main.async
-                        {
+                    DispatchQueue.main.async {
                             self.dismiss(animated: true, completion: nil)
                     }
                 }
@@ -175,10 +148,8 @@ class SignInViewController: UIViewController {
         }
     }
     
-    func removeActivityIndicator(activityIndicator: UIActivityIndicatorView)
-    {
-        DispatchQueue.main.async
-            {
+    func removeActivityIndicator(activityIndicator: UIActivityIndicatorView) {
+        DispatchQueue.main.async {
                 activityIndicator.stopAnimating()
                 activityIndicator.removeFromSuperview()
         }

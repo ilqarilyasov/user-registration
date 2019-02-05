@@ -1,22 +1,12 @@
 import UIKit
 
 class RegisterUserViewController: UIViewController {
+    
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
         print("Cancel button tapped")
@@ -40,8 +30,7 @@ class RegisterUserViewController: UIViewController {
         }
         
         // Validate password
-        if ((passwordTextField.text?.elementsEqual(repeatPasswordTextField.text!))! != true)
-        {
+        if ((passwordTextField.text?.elementsEqual(repeatPasswordTextField.text!))! != true) {
             // Display alert message and return
             displayMessage(userMessage: "Please make sure that passwords match")
             return
@@ -58,7 +47,6 @@ class RegisterUserViewController: UIViewController {
         
         // Start Activity Indicator
         myActivityIndicator.startAnimating()
-        
         view.addSubview(myActivityIndicator)
         
         
@@ -87,8 +75,7 @@ class RegisterUserViewController: UIViewController {
         
         self.removeActivityIndicator(activityIndicator: myActivityIndicator)
         
-        if error != nil
-        {
+        if error != nil {
             self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
             print("error=\(String(describing: error))")
             return
@@ -101,12 +88,10 @@ class RegisterUserViewController: UIViewController {
             
             if let parseJSON = json {
                 
-                
                 let userId = parseJSON["userId"] as? String
                 print("User id: \(String(describing: userId!))")
                 
-                if (userId?.isEmpty)!
-                {
+                if (userId?.isEmpty)! {
                     // Display an Alert dialog with a friendly error message
                     self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
                     return
@@ -127,17 +112,12 @@ class RegisterUserViewController: UIViewController {
             print(error)
         }
         }
-        
         task.resume()
-        
     }
-    
         
         
-      func removeActivityIndicator(activityIndicator: UIActivityIndicatorView)
-        {
-            DispatchQueue.main.async
-             {
+      func removeActivityIndicator(activityIndicator: UIActivityIndicatorView) {
+            DispatchQueue.main.async {
                     activityIndicator.stopAnimating()
                     activityIndicator.removeFromSuperview()
             }
@@ -145,15 +125,13 @@ class RegisterUserViewController: UIViewController {
         
     
     func displayMessage(userMessage:String) -> Void {
-        DispatchQueue.main.async
-            {
+        DispatchQueue.main.async {
                 let alertController = UIAlertController(title: "Alert", message: userMessage, preferredStyle: .alert)
                 
                 let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
                     // Code in this block will trigger when OK button tapped.
                     print("Ok button tapped")
-                    DispatchQueue.main.async
-                        {
+                    DispatchQueue.main.async {
                             self.dismiss(animated: true, completion: nil)
                     }
                 }
@@ -161,6 +139,6 @@ class RegisterUserViewController: UIViewController {
                 self.present(alertController, animated: true, completion:nil)
         }
     }
- 
-
+    
+    
 }

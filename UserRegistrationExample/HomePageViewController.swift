@@ -13,17 +13,6 @@ class HomePageViewController: UIViewController {
 
     @IBOutlet weak var userFullNameLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func signOutButtonTapped(_ sender: Any) {
         KeychainWrapper.standard.removeObject(forKey: "accessToken")
         KeychainWrapper.standard.removeObject(forKey: "userId")
@@ -38,8 +27,7 @@ class HomePageViewController: UIViewController {
        loadMemberProfile()
     }
     
-    func loadMemberProfile()
-    {
+    func loadMemberProfile() {
         let accessToken: String? = KeychainWrapper.standard.string(forKey: "accessToken")
         let userId: String? = KeychainWrapper.standard.string(forKey: "userId")
         
@@ -51,8 +39,7 @@ class HomePageViewController: UIViewController {
 
         let task = URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
        
-            if error != nil
-            {
+            if error != nil {
                 self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
                 print("error=\(String(describing: error))")
                 return
@@ -63,8 +50,7 @@ class HomePageViewController: UIViewController {
                
                 if let parseJSON = json {
                     
-                    DispatchQueue.main.async
-                        {
+                    DispatchQueue.main.async {
                             let firstName: String?  = parseJSON["firstName"] as? String
                             let lastName: String? = parseJSON["lastName"] as? String
                             
@@ -85,7 +71,6 @@ class HomePageViewController: UIViewController {
             
         }
         task.resume()
-        
     }
     
     func displayMessage(userMessage:String) -> Void {
@@ -101,6 +86,6 @@ class HomePageViewController: UIViewController {
                 self.present(alertController, animated: true, completion:nil)
         }
     }
- 
-
+    
+    
 }
