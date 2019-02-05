@@ -12,12 +12,9 @@
 		8AF91D811F4C68F400A7ED4A /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF91D801F4C68F400A7ED4A /* RegisterUserViewController.swift */; };
 		8AF91D831F4C6BA000A7ED4A /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF91D821F4C6BA000A7ED4A /* HomePageViewController.swift */; };
 		8AFDB79B1F4B227B00E2C254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDB79A1F4B227B00E2C254 /* AppDelegate.swift */; };
-		8AFDB79D1F4B227B00E2C254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDB79C1F4B227B00E2C254 /* ViewController.swift */; };
 		8AFDB7A01F4B227B00E2C254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFDB79E1F4B227B00E2C254 /* Main.storyboard */; };
 		8AFDB7A21F4B227B00E2C254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFDB7A11F4B227B00E2C254 /* Assets.xcassets */; };
 		8AFDB7A51F4B227B00E2C254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFDB7A31F4B227B00E2C254 /* LaunchScreen.storyboard */; };
-		8AFDB7B01F4B227B00E2C254 /* UserRegistrationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDB7AF1F4B227B00E2C254 /* UserRegistrationExampleTests.swift */; };
-		8AFDB7BB1F4B227B00E2C254 /* UserRegistrationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDB7BA1F4B227B00E2C254 /* UserRegistrationExampleUITests.swift */; };
 		8AFDB7C91F4B314400E2C254 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDB7C81F4B314400E2C254 /* SignInViewController.swift */; };
 		992B03C0CEC67E71D9127038 /* Pods_UserRegistrationExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADED3C6AD487F0E8EBB0712 /* Pods_UserRegistrationExampleUITests.framework */; };
 /* End PBXBuildFile section */
@@ -49,17 +46,12 @@
 		8AF91D821F4C6BA000A7ED4A /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		8AFDB7971F4B227B00E2C254 /* UserRegistrationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegistrationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFDB79A1F4B227B00E2C254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AFDB79C1F4B227B00E2C254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8AFDB79F1F4B227B00E2C254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AFDB7A11F4B227B00E2C254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AFDB7A41F4B227B00E2C254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AFDB7A61F4B227B00E2C254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AFDB7AB1F4B227B00E2C254 /* UserRegistrationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserRegistrationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AFDB7AF1F4B227B00E2C254 /* UserRegistrationExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationExampleTests.swift; sourceTree = "<group>"; };
-		8AFDB7B11F4B227B00E2C254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AFDB7B61F4B227B00E2C254 /* UserRegistrationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserRegistrationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AFDB7BA1F4B227B00E2C254 /* UserRegistrationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationExampleUITests.swift; sourceTree = "<group>"; };
-		8AFDB7BC1F4B227B00E2C254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AFDB7C81F4B314400E2C254 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9D22631E25D3D32567B19BA6 /* Pods-UserRegistrationExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRegistrationExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UserRegistrationExampleUITests/Pods-UserRegistrationExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7E2C67F5383C1A53AC3929 /* Pods_UserRegistrationExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserRegistrationExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,12 +100,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8283455C22091F000036BCB2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8AFDB79E1F4B227B00E2C254 /* Main.storyboard */,
+				8AFDB7A31F4B227B00E2C254 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8283455D22091F0F0036BCB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AFDB79A1F4B227B00E2C254 /* AppDelegate.swift */,
+				8AFDB7A11F4B227B00E2C254 /* Assets.xcassets */,
+				8AFDB7A61F4B227B00E2C254 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8AFDB78E1F4B227B00E2C254 = {
 			isa = PBXGroup;
 			children = (
 				8AFDB7991F4B227B00E2C254 /* UserRegistrationExample */,
-				8AFDB7AE1F4B227B00E2C254 /* UserRegistrationExampleTests */,
-				8AFDB7B91F4B227B00E2C254 /* UserRegistrationExampleUITests */,
 				8AFDB7981F4B227B00E2C254 /* Products */,
 				6D5184E6EB49FE6B78AB4EF8 /* Pods */,
 				9BE9FE7409EDB8DF8742D469 /* Frameworks */,
@@ -133,35 +142,13 @@
 		8AFDB7991F4B227B00E2C254 /* UserRegistrationExample */ = {
 			isa = PBXGroup;
 			children = (
-				8AFDB79A1F4B227B00E2C254 /* AppDelegate.swift */,
-				8AFDB79C1F4B227B00E2C254 /* ViewController.swift */,
-				8AFDB79E1F4B227B00E2C254 /* Main.storyboard */,
-				8AFDB7A11F4B227B00E2C254 /* Assets.xcassets */,
-				8AFDB7A31F4B227B00E2C254 /* LaunchScreen.storyboard */,
-				8AFDB7A61F4B227B00E2C254 /* Info.plist */,
 				8AFDB7C81F4B314400E2C254 /* SignInViewController.swift */,
 				8AF91D801F4C68F400A7ED4A /* RegisterUserViewController.swift */,
 				8AF91D821F4C6BA000A7ED4A /* HomePageViewController.swift */,
+				8283455C22091F000036BCB2 /* Storyboard */,
+				8283455D22091F0F0036BCB2 /* Resources */,
 			);
 			path = UserRegistrationExample;
-			sourceTree = "<group>";
-		};
-		8AFDB7AE1F4B227B00E2C254 /* UserRegistrationExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				8AFDB7AF1F4B227B00E2C254 /* UserRegistrationExampleTests.swift */,
-				8AFDB7B11F4B227B00E2C254 /* Info.plist */,
-			);
-			path = UserRegistrationExampleTests;
-			sourceTree = "<group>";
-		};
-		8AFDB7B91F4B227B00E2C254 /* UserRegistrationExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8AFDB7BA1F4B227B00E2C254 /* UserRegistrationExampleUITests.swift */,
-				8AFDB7BC1F4B227B00E2C254 /* Info.plist */,
-			);
-			path = UserRegistrationExampleUITests;
 			sourceTree = "<group>";
 		};
 		9BE9FE7409EDB8DF8742D469 /* Frameworks */ = {
@@ -246,18 +233,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Sergey Kargopolov";
 				TargetAttributes = {
 					8AFDB7961F4B227B00E2C254 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
 					};
 					8AFDB7AA1F4B227B00E2C254 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
 						TestTargetID = 8AFDB7961F4B227B00E2C254;
 					};
 					8AFDB7B51F4B227B00E2C254 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
 						TestTargetID = 8AFDB7961F4B227B00E2C254;
 					};
 				};
@@ -465,7 +455,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF91D811F4C68F400A7ED4A /* RegisterUserViewController.swift in Sources */,
-				8AFDB79D1F4B227B00E2C254 /* ViewController.swift in Sources */,
 				8AFDB79B1F4B227B00E2C254 /* AppDelegate.swift in Sources */,
 				8AF91D831F4C6BA000A7ED4A /* HomePageViewController.swift in Sources */,
 				8AFDB7C91F4B314400E2C254 /* SignInViewController.swift in Sources */,
@@ -476,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFDB7B01F4B227B00E2C254 /* UserRegistrationExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +472,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFDB7BB1F4B227B00E2C254 /* UserRegistrationExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +524,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -544,6 +532,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -594,6 +583,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -601,6 +591,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -635,11 +626,11 @@
 			baseConfigurationReference = 00301A36A93DF947FA609A70 /* Pods-UserRegistrationExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UserRegistrationExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UserRegistrationExample/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.UserRegistrationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -649,11 +640,11 @@
 			baseConfigurationReference = 5FC5DA2C468BF8B2C404EF07 /* Pods-UserRegistrationExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UserRegistrationExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UserRegistrationExample/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.UserRegistrationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -668,7 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.UserRegistrationExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserRegistrationExample.app/UserRegistrationExample";
 			};
@@ -684,7 +675,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.UserRegistrationExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserRegistrationExample.app/UserRegistrationExample";
 			};
@@ -699,7 +690,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.UserRegistrationExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = UserRegistrationExample;
 			};
@@ -714,7 +705,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.UserRegistrationExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = UserRegistrationExample;
 			};
